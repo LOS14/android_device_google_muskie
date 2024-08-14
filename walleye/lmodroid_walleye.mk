@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 $(call inherit-product-if-exists, vendor/godlib/god.mk)
-
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
